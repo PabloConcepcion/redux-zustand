@@ -1,0 +1,8 @@
+{
+    "home": {
+        "title": "Welcome to the project",
+        "subtitle": "What is it about?",
+        "description": "Homepage. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ac tincidunt, elit nunc tincidunt nunc, id lacinia nunc nisl id nunc. Sed id mauris consectetur, lacinia nunc id, aliquet nunc. Nulla facilisi. Sed auctor, nisl a lacinia tincidunt, urna nunc lacinia nunc, id lacinia nunc nisl id nunc. Sed id mauris consectetur, lacinia nunc id, aliquet nunc. Nulla facilisi. Sed auctor, nisl a lacinia tincidunt, urna nunc lacinia nunc, id lacinia nunc nisl id nunc."
+    },
+    "prueba": "this is a test"
+}

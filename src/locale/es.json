@@ -1,0 +1,8 @@
+{
+    "home": {
+        "title": "Bienvenido al proyecto",
+        "subtitle": "¿En qué consiste?",
+        "description": "Página de inicioLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl ac  tincidunt, elit nunc tincidunt nunc, id lacinia nunc nisl id nunc. Sed id mauris consectetur, lacinia nunc id, aliquet nunc. Nulla facilisi. Sed auctor, nisl a lacinia tincidunt, urna nunc lacinia nunc, id lacinia nunc nisl id nunc. Sed id mauris consectetur, lacinia nunc id, aliquet nunc. Nulla facilisi. Sed auctor, nisl a lacinia tincidunt, urnanunc lacinia nunc, id lacinia nunc nisl id nunc."
+    },
+    "prueba": "estas es una prueba"
+}
