@@ -18,26 +18,27 @@ function listFiles(dirPath) {
     // importStatement => import localeEn from './en.json';
     const imports = jsonFiles.map(file => {
       const localeName = path.basename(file, '.json');
-      const importStatement = `import locale${localeName.charAt(0).toUpperCase() + localeName.slice(1)} from './${localeName}.json';`;
+      const fileName = localeName.charAt(0).toUpperCase() + localeName.slice(1);
+      const importStatement = `import locale${fileName} from './${localeName}.json';`;
       return importStatement;
     });
 
-  
+
     const resourceEntries = jsonFiles.map(file => {
       const localeName = path.basename(file, '.json');
-      return `    ${localeName}: {
-        translation: locale${localeName.charAt(0).toUpperCase() + localeName.slice(1)}
-    }`;
+      const fileName = localeName.charAt(0).toUpperCase() + localeName.slice(1);
+      return `
+      ${localeName}: {
+        translation: locale${fileName}
+      }`;
     });
-
+    const resources = resourceEntries.join(',\n');
     // Generar el contenido del archivo .ts
-    const tsContent = `
-      ${imports.join('\n')}
-
-        export const resources = {
-        ${resourceEntries.join(',\n')}
-        };
-        `;
+    const tsContent = `${imports.join('\n')}
+export const resources = {
+        ${resources}
+   };
+       `;
 
     // Cambiar la ruta de destino para que sea /locale/resources.ts
     const tsFilePath = path.join(process.cwd(), 'src', 'locale', 'resources.ts');
