@@ -8,16 +8,24 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "node src/locale/generateTranslations.cjs && vite --open"
+    "start": "node src/locale/generateTranslations.cjs && vite --open",
+    "msal": "env-cmd -e local vite --open",
+    "msal2": "env-cmd -e local2 vite --open"
   },
   "dependencies": {
+    "@azure/msal-browser": "^3.27.0",
+    "@azure/msal-react": "^2.2.0",
+    "@fluentui/react": "^8.121.12",
+    "env-cmd": "^10.1.0",
     "i18next": "^23.16.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-i18next": "^15.1.1"
+    "react-i18next": "^15.1.1",
+    "react-jss": "^10.10.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
+    "@types/node": "^22.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",

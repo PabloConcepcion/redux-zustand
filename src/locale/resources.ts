@@ -1,12 +1,13 @@
-
 import localeEn from './en.json';
 import localeEs from './es.json';
-
 export const resources = {
-    en: {
+        
+      en: {
         translation: localeEn
-    },
-    es: {
+      },
+
+      es: {
         translation: localeEs
-    }
-};
+      }
+   };
+       

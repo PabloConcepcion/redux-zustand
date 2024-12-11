@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { resources } from '../locale/resources';
 import i18next from 'i18next';
+import {CompilatedComponent} from '../pruebaCompiladas/ComponentePruebaCompilado';
 
 
 const Home: React.FC = () => {
@@ -14,7 +15,7 @@ const Home: React.FC = () => {
 
     return (
         <div>
-            {
+            {/* {
                 languages.map((language) => (
                     <button key={language} onClick={() => changeLanguage(language)}>
                         {i18next.language === language ? language.toUpperCase() : language}
@@ -26,7 +27,9 @@ const Home: React.FC = () => {
             <h2>{pageText.subtitle}</h2>
             <p>
                 {pageText.description}
-            </p>
+            </p> */}
+
+            <CompilatedComponent />
             {/* Continue with the rest of your component */}
         </div>
     );
